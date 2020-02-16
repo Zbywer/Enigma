@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestController">
+    <children>
+        <TextArea fx:id="textArea" layoutX="28.0" layoutY="120.0" prefHeight="236.0" prefWidth="551.0"
+                  promptText="write text you want to decode" text="&#10;"/>
+        <Button layoutX="27.0" layoutY="55.0" mnemonicParsing="false" onAction="#triggerEncoding" prefHeight="47.0"
+                prefWidth="551.0" text="ENCODE"/>
+        <Button layoutX="56.0" layoutY="23.0" mnemonicParsing="false" onAction="#triggerDecoding" prefHeight="26.0"
+                prefWidth="499.0" text="DECODE"/>
+    </children>
+</AnchorPane>
