@@ -27,7 +27,8 @@ public class CipherFactoryTest {
         @Test
         protected void shouldThrowExceptionWithGivenUnrecognizedType() {
             String unrecognized = "unrecognized";
-            Assertions.assertThrows(CipherNotFoundException.class, () -> factory.create(unrecognized));
+            Assertions.assertThrows(CipherNotFoundException.class, () -> factory.create(unrecognized),
+                    MESSAGE + unrecognized);
         }
     }
 

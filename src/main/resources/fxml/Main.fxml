@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--        root is an ID of our layout which is anchorPane and in main application class we can refer to it by-->
+<!--        define variable with name equals to its id-->
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+    <children>
+        <TextArea fx:id="textArea" layoutX="28.0" layoutY="205.0" prefHeight="151.0" prefWidth="551.0" promptText="write text you want to decode" text="Place  the text to encode&#10;&#10;" />
+        <Button layoutX="398.0" layoutY="105.0" mnemonicParsing="false" onAction="#triggerEncoding" prefHeight="47.0" prefWidth="181.0" text="ENCODE" textFill="#0d38d5" />
+        <Button layoutX="397.0" layoutY="22.0" mnemonicParsing="false" onAction="#triggerDecoding" prefHeight="47.0" prefWidth="182.0" text="DECODE" textFill="#cf1515" />
+    </children>
+</AnchorPane>

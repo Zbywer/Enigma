@@ -18,8 +18,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class TestMain extends Application {
-    String resourcesPath = "/fxml/Test.fxml";
+public class Main extends Application {
+    String resourcesPath = "/fxml/Main.fxml";
 
     @Override
     public void start(Stage primaryStage) throws Exception {  // stage - wycinek ekranu na monitorze, na tym możemy

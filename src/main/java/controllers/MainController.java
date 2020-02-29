@@ -1,3 +1,5 @@
+package controllers;
+
 import Ciphers.Cipher;
 import Ciphers.impl.CesarCipher;
 import javafx.fxml.FXML;
@@ -7,7 +9,7 @@ import javafx.scene.control.TextArea;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class TestController implements Initializable { // dzięki temu interfejsowi nasz fxlm może być parsowany
+public class MainController implements Initializable { // dzięki temu interfejsowi nasz fxlm może być parsowany
 
 
     @FXML
