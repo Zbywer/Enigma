@@ -6,12 +6,16 @@
 <!--        root is an ID of our layout which is anchorPane and in main application class we can refer to it by-->
 <!--        define variable with name equals to its id-->
 
-<AnchorPane fx:id="root" opacity="0.85" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+<AnchorPane fx:id="root" opacity="0.85" prefHeight="421.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
     <children>
-        <TextArea fx:id="inputTextArea" layoutX="28.0" layoutY="205.0" prefHeight="151.0" prefWidth="551.0" promptText="text to decode " text="&#10;" />
-        <Button layoutX="398.0" layoutY="105.0" mnemonicParsing="false" onAction="#triggerEncoding" prefHeight="47.0" prefWidth="181.0" text="ENCODE" textFill="#0d38d5" />
-        <Button layoutX="397.0" layoutY="22.0" mnemonicParsing="false" onAction="#triggerDecoding" prefHeight="47.0" prefWidth="182.0" text="DECODE" textFill="#cf1515" />
-        <Button layoutX="203.0" layoutY="46.0" mnemonicParsing="false" onAction="#saveToFile" text="Save" />
-      <Button layoutX="46.0" layoutY="46.0" mnemonicParsing="false" onAction="#loadFile" prefHeight="26.0" prefWidth="88.0" text="LOAD" />
+        <Button layoutX="397.0" layoutY="81.0" mnemonicParsing="false" onAction="#triggerEncoding" prefHeight="47.0" prefWidth="181.0" text="ENCODE" textFill="#0d38d5" />
+        <Button layoutX="225.0" layoutY="81.0" mnemonicParsing="false" onAction="#triggerDecoding" prefHeight="47.0" prefWidth="162.0" text="DECODE" textFill="#cf1515" />
+        <Button layoutX="219.0" layoutY="381.0" mnemonicParsing="false" onAction="#saveToFile" text="Save" />
+      <Button layoutX="479.0" layoutY="380.0" mnemonicParsing="false" onAction="#loadFile" prefHeight="26.0" prefWidth="88.0" text="LOAD" />
+      <ChoiceBox fx:id="cipherChoiceBox" layoutX="219.0" layoutY="46.0" prefHeight="26.0" prefWidth="355.0" />
+      <Label layoutX="47.0" layoutY="385.0" text="Choose save directory" />
+      <Label layoutX="349.0" layoutY="385.0" text="Chose file do load" />
+      <Label layoutX="373.0" layoutY="14.0" text="Cipher method type" />
+      <TextArea fx:id="inputTextArea" focusTraversable="false" layoutX="105.0" layoutY="193.0" prefHeight="107.0" prefWidth="447.0" promptText="text to encode" />
     </children>
 </AnchorPane>

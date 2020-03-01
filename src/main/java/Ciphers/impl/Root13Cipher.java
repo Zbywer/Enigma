@@ -1,5 +1,4 @@
 package Ciphers.impl;
-
 import Ciphers.Cipher;
 
 public class Root13Cipher implements Cipher {
